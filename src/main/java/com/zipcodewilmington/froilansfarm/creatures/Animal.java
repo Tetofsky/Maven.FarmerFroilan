@@ -1,4 +1,6 @@
 package com.zipcodewilmington.froilansfarm.creatures;
 
-public class Animal {
+import com.zipcodewilmington.froilansfarm.crops.Edible;
+
+abstract class Animal implements Eater<Edible>, NoiseMaker{
 }

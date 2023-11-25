@@ -1,4 +1,7 @@
 package com.zipcodewilmington.froilansfarm.structures;
 
-public class Storage {
+import java.util.ArrayList;
+import java.util.HashMap;
+
+abstract class Storage extends HashMap<Integer, Object> implements Farm {
 }
