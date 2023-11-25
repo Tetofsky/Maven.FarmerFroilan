@@ -1,4 +1,6 @@
 package com.zipcodewilmington.froilansfarm.structures;
 
-public class Dwelling {
+import java.util.ArrayList;
+
+abstract class Dwelling extends ArrayList<Object> implements Farm {
 }

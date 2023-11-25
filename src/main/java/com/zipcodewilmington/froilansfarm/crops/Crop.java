@@ -1,4 +1,6 @@
 package com.zipcodewilmington.froilansfarm.crops;
 
-public class Crop {
+import java.util.ArrayList;
+
+abstract class Crop extends ArrayList<Object> {
 }
