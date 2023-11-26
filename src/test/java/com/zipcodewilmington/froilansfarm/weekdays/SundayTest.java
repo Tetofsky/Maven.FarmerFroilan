@@ -22,4 +22,14 @@ public class SundayTest extends BaseDayTest{
         Assert.assertTrue(expected4);
         Assert.assertEquals(, cropRow3.getPlants());
     }
+
+
+    // For each day we will need the following crops:
+        // 33 EarCorn
+        // 3 Tomato
+        // 7 Egg
+        // How many Bean do the Chicken eat per day? What about the Froilan & Froilanda?
+            // 2 Bean per Chicken, 1 Bean for Froilan, 3 Bean for Froilanda.
+            // 34 Bean per day
+
 }

@@ -1,4 +1,8 @@
 package com.zipcodewilmington.froilansfarm.vehicles;
 
-public class Tractor {
+import com.zipcodewilmington.froilansfarm.crops.Crop;
+import com.zipcodewilmington.froilansfarm.crops.CropRow;
+
+public class Tractor extends Vehicle{
+
 }
