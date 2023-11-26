@@ -10,38 +10,19 @@ import org.junit.Test;
 public class SundayTest extends BaseDayTest{
     @Test
     public void Sunday(){
-        for (Horse h: stable1){
-            froilan.mount(h);
-            froilan.ride(h);
-            froilan.dismount(h);
-            h.eat(3, "EarCorn");
-            Assert.assertTrue(h.eat(3, "EarCorn"));
-            Assert.assertFalse(h.eat(3, "Tomato"));
-        }
-        for (Horse h: stable2){
-            froilanda.mount(h);
-            froilanda.ride(h);
-            froilanda.dismount(h);
-            h.eat(3, "EarCorn");
-        }
-        for (Horse h: stable3){
-            froilan.mount(h);
-            froilan.ride(h);
-            froilan.dismount(h);
-            h.eat(3, "EarCorn");
-        }
-        froilan.eat(1, "EarCorn");
-        froilan.eat(2, "Tomato");
-        froilan.eat(5, "Egg");
-        froilan.eat(1, "Bean");
-        froilanda.eat(2, "EarCorn");
-        froilanda.eat(1, "Tomato");
-        froilanda.eat(2, "Egg");
-        froilanda.eat(3, "Bean");
-        froilan.plant(new CornStalk(), cropRow1);
-        froilan.plant(new TomatoPlant(), cropRow2);
-        froilan.plant(new BeanStalk(), cropRow3);
+        // We should update the values in silo for each day of the week
+        // Also the crops' status (if crops have been planted/ fertilized) should be updated daily
+        Boolean expected2 = froilan.plant(new CornStalk(), cropRow1);
+        Assert.assertTrue(expected2);
+        Assert.assertEquals(, cropRow1.getPlants()); // How much of each crop will grow per cropRow?
+        Boolean expected3 = froilan.plant(new TomatoPlant(), cropRow2);
+        Assert.assertTrue(expected3);
+        Assert.assertEquals(, cropRow2.getPlants());
+        Boolean expected4 = froilan.plant(new BeanStalk(), cropRow3);
+        Assert.assertTrue(expected4);
+        Assert.assertEquals(, cropRow3.getPlants());
     }
+
 
     // For each day we will need the following crops:
         // 33 EarCorn
