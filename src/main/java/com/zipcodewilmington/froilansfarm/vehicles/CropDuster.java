@@ -1,6 +1,8 @@
 package com.zipcodewilmington.froilansfarm.vehicles;
 
-public class CropDuster extends Vehicle {
+import com.zipcodewilmington.froilansfarm.crops.Field;
+
+public class CropDuster extends Vehicle implements AirCraft, FarmVehicle {
     @Override
     public String makeNoise() {
         return null;
@@ -8,6 +10,16 @@ public class CropDuster extends Vehicle {
 
     @Override
     public Boolean move() {
+        return null;
+    }
+
+    @Override
+    public Boolean fly(Field field) {
+        return null;
+    }
+
+    @Override
+    public Boolean operate() {
         return null;
     }
 }
