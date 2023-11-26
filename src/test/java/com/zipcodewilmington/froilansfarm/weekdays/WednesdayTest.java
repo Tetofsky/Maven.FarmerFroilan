@@ -4,11 +4,9 @@ import com.zipcodewilmington.froilansfarm.structures.ChickenCoop;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Random;
-
 public class WednesdayTest {
     @Test
-    public void WednesdayTest(){
+    public void Wednesday(){
         for (Chicken c: chickenCoop1){
             Egg e = c.layEgg();
 //            e.randomFertilize();
