@@ -1,6 +1,8 @@
 package com.zipcodewilmington.froilansfarm.structures;
 
-public class Stable extends Dwelling {
+import com.zipcodewilmington.froilansfarm.creatures.Horse;
+
+public class Stable <P extends Horse> extends Dwelling {
     @Override
     public Object getObject(Object object) {
         return null;

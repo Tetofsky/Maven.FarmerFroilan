@@ -1,5 +1,6 @@
 package com.zipcodewilmington.froilansfarm.creatures;
 
+import com.zipcodewilmington.froilansfarm.crops.EarCorn;
 import com.zipcodewilmington.froilansfarm.crops.Edible;
 import com.zipcodewilmington.froilansfarm.vehicles.Rideable;
 
