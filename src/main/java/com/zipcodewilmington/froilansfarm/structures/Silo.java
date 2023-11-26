@@ -1,4 +1,10 @@
 package com.zipcodewilmington.froilansfarm.structures;
 
-public class Silo {
+import com.zipcodewilmington.froilansfarm.crops.Edible;
+
+public class Silo<P extends Edible> extends Storage {
+    @Override
+    public Object getObject(Object object) {
+        return null;
+    }
 }

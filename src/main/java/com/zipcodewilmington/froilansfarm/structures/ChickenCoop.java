@@ -1,4 +1,10 @@
 package com.zipcodewilmington.froilansfarm.structures;
 
-public class ChickenCoop {
+import com.zipcodewilmington.froilansfarm.creatures.Chicken;
+
+public class ChickenCoop <P extends Chicken> extends Dwelling {
+    @Override
+    public Object getObject(Object object) {
+        return null;
+    }
 }

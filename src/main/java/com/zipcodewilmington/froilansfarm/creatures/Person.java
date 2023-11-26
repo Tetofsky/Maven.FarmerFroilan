@@ -2,7 +2,7 @@ package com.zipcodewilmington.froilansfarm.creatures;
 
 import com.zipcodewilmington.froilansfarm.crops.Edible;
 
-abstract class Person implements Eater<Edible>, NoiseMaker{
+public abstract class Person implements Eater<Edible>, NoiseMaker{
     String name;
 
     public Person(String name){
