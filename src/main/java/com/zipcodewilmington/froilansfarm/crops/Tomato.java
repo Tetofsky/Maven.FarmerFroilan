@@ -1,6 +1,6 @@
 package com.zipcodewilmington.froilansfarm.crops;
 
-public class Tomato implements Edible {
+public class Tomato implements Object {
     @Override
     public Boolean isEdible() {
         return null;
