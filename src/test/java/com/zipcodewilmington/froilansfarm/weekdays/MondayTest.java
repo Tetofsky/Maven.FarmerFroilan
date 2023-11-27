@@ -17,13 +17,13 @@ public class MondayTest extends BaseDayTest{
     @Test
     public void testCropDusterFly(){
         //setup();
-        Boolean actual = cropDuster.fly(Field);
+        Boolean actual = cropDuster.fly(field);
         Assert.assertTrue(actual);
     }
     @Test
     public void testCropDusterFertilize(){
         //setup();
-        Boolean actual = cropDuster.fertilize(CropRow);
+        Boolean actual = cropDuster.fertilize();
         Assert.assertTrue(actual);
     }
 

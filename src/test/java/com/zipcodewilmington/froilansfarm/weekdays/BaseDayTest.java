@@ -23,11 +23,11 @@ public class BaseDayTest {
         froilan = new Farmer("Froilan");
         froilanda = new Pilot("Froilanda");
         field = new Field<CropRow>();
-        cropRow1 = new CropRow<EarCorn>();
-        cropRow2 = new CropRow<Tomato>();
-        cropRow3 = new CropRow<Bean>();
-        cropRow4 = new CropRow<EarCorn>();
-        cropRow5 = new CropRow<Bean>();
+        cropRow1 = new CropRow<CornStalk>();
+        cropRow2 = new CropRow<TomatoPlant>();
+        cropRow3 = new CropRow<BeanStalk>();
+        cropRow4 = new CropRow<CornStalk>();
+        cropRow5 = new CropRow<BeanStalk>();
         field.add(cropRow1);
         field.add(cropRow2);
         field.add(cropRow3);
