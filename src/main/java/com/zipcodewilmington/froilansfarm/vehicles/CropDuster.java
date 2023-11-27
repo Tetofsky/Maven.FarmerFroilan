@@ -25,4 +25,8 @@ public class CropDuster <RiderType extends Pilot> extends Vehicle implements Air
     public Boolean operate() {
         return null;
     }
+
+    public Boolean fertilize() {
+        return true;
+    }
 }
