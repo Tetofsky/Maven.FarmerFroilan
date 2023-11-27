@@ -1,10 +1,12 @@
 package com.zipcodewilmington.froilansfarm.crops;
 
+
 import com.zipcodewilmington.froilansfarm.creatures.Pilot;
 import com.zipcodewilmington.froilansfarm.vehicles.CropDuster;
 import com.zipcodewilmington.froilansfarm.vehicles.Tractor;
 
 public class EarCorn implements Edible {
+
 
     public Boolean harvested;
     public Boolean fertilized;

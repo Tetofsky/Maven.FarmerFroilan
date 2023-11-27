@@ -5,6 +5,7 @@ import com.zipcodewilmington.froilansfarm.vehicles.CropDuster;
 import com.zipcodewilmington.froilansfarm.vehicles.Tractor;
 import com.zipcodewilmington.froilansfarm.vehicles.Vehicle;
 
+
 public class Bean /*<P extends Tractor, T extends CropDuster<Pilot>>*/ implements Edible{
     public Boolean harvested;
     public Boolean fertilized;
