@@ -1,6 +1,6 @@
 package com.zipcodewilmington.froilansfarm.creatures;
 
-import com.zipcodewilmington.froilansfarm.crops.Edible;
+import com.zipcodewilmington.froilansfarm.structures.Silo;
 
 public class Pilot extends Person {
     public Pilot(String name) {
@@ -8,12 +8,13 @@ public class Pilot extends Person {
     }
 
     @Override
-    public Boolean eat(Integer amountOfEat, Edible edible) {
-        return null;
+    public Boolean eat(Integer amountOfEat, Object edible, Silo silo) {
+        silo.removeObject(amountOfEat, edible);
+        return true;
     }
 
     @Override
     public String makeNoise() {
-        return null;
+        return "I'm da pilot";
     }
 }

@@ -1,6 +1,6 @@
 package com.zipcodewilmington.froilansfarm.crops;
 
-public class EarCorn implements Edible {
+public class EarCorn implements Object {
     @Override
     public Boolean isEdible() {
         return null;
