@@ -2,6 +2,7 @@ package com.zipcodewilmington.froilansfarm.vehicles;
 
 import com.zipcodewilmington.froilansfarm.crops.Crop;
 import com.zipcodewilmington.froilansfarm.crops.CropRow;
+import com.zipcodewilmington.froilansfarm.crops.Edible;
 
 import java.util.Random;
 
@@ -25,12 +26,12 @@ public class Tractor extends Vehicle implements FarmVehicle {
         return true;
     }
 
-    public boolean fertilize(CropRow cropRow) {
-        for (Crop c : cropRow) {
-            c.hasBeenHarvested = true;
-            silo.add();
+    public boolean harvest(CropRow<Crop> cropRow) {
+        for (Crop c : cropRow.keySet()) {
+            for(Edible e: c){
+                e.hasBeenHarvested();
+            }
         }
         return true;
-
     }
 }

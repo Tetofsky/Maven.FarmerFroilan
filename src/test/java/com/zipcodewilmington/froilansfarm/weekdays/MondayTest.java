@@ -23,7 +23,7 @@ public class MondayTest extends BaseDayTest{
     @Test
     public void testCropDusterFertilize(){
         //setup();
-        Boolean actual = cropDuster.fertilize();
+        Boolean actual = cropDuster.fertilize(cropRow1);
         Assert.assertTrue(actual);
     }
 

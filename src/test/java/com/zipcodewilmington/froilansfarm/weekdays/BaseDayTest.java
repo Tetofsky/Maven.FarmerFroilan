@@ -10,29 +10,29 @@ import org.junit.Before;
 public class BaseDayTest {
     Farmer froilan;
     Pilot froilanda;
-    Field field; // Do we need to include <> in each storage/dwelling?
+    Field<CropRow<Crop>> field; // Do we need to include <> in each storage/dwelling?
     CropRow cropRow1, cropRow2, cropRow3, cropRow4, cropRow5;
     ChickenCoop chickenCoop1, chickenCoop2, chickenCoop3, chickenCoop4;
     Stable stable1, stable2, stable3;
     Tractor tractor;
-    CropDuster cropDuster;
+    CropDuster<Pilot> cropDuster;
     Silo silo;
 
     @Before
     public void setup(){
-        froilan = new Farmer("Froilan");
+        froilan = new Farmer<>("Froilan");
         froilanda = new Pilot("Froilanda");
-        field = new Field<CropRow>();
-        cropRow1 = new CropRow<CornStalk>();
-        cropRow2 = new CropRow<TomatoPlant>();
-        cropRow3 = new CropRow<BeanStalk>();
-        cropRow4 = new CropRow<CornStalk>();
-        cropRow5 = new CropRow<BeanStalk>();
-        field.add(cropRow1);
-        field.add(cropRow2);
-        field.add(cropRow3);
-        field.add(cropRow4);
-        field.add(cropRow5);
+        field = new Field<>();
+        cropRow1 = new CropRow<CornStalk<EarCorn>>();
+        cropRow2 = new CropRow<TomatoPlant<Tomato>>();
+        cropRow3 = new CropRow<BeanStalk<Bean>>();
+        cropRow4 = new CropRow<CornStalk<EarCorn>>();
+        cropRow5 = new CropRow<BeanStalk<Bean>>();
+        field.put(cropRow1, 1);
+        field.put(cropRow2, 2);
+        field.put(cropRow3, 3);
+        field.put(cropRow4, 4);
+        field.put(cropRow5, 5);
         chickenCoop1 = new ChickenCoop();
         chickenCoop2 = new ChickenCoop();
         chickenCoop3 = new ChickenCoop();
@@ -68,10 +68,10 @@ public class BaseDayTest {
         tractor = new Tractor();
         cropDuster = new CropDuster();
         silo = new Silo();
-        silo.add(100, new EarCorn(true, true)); // Add a baseline amount of food?
-        silo.add(10, new Tomato(true, true));
-        silo.add(100, new Bean(true, true));
-        silo.add(25, new Egg(true, false));
+        silo.put(100, new EarCorn(true, true)); // Add a baseline amount of food?
+        silo.put(10, new Tomato(true, true));
+        silo.put(100, new Bean(true, true));
+        silo.put(25, new Egg(true, false));
     }
 
     @After
