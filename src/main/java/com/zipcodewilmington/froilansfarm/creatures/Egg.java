@@ -1,10 +1,11 @@
 package com.zipcodewilmington.froilansfarm.creatures;
 
+import com.zipcodewilmington.froilansfarm.crops.Edible;
 import com.zipcodewilmington.froilansfarm.structures.Silo;
 
 import java.util.Random;
 
-public class Egg implements Object {
+public class Egg implements Edible {
     Boolean harvested, fertilized;
     Random random;
     public Egg(){
