@@ -15,6 +15,6 @@ public class Farmer extends Person implements Botanist {
 
     @Override
     public Boolean plant(Crop crop, CropRow<Crop> cropRow) {
-        return false;
+        return true;
     }
 }

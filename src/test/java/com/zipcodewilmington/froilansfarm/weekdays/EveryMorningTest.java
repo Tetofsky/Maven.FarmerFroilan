@@ -10,7 +10,6 @@ public class EveryMorningTest extends BaseDayTest{
         public void DailyRoutineTest() {
             for (Horse h : stable1) {
                 froilan.mount(h);
-                h.move();
                 froilan.dismount(h);
                 Boolean expected1 = h.eat(3, "EarCorn");
                 Assert.assertTrue(expected1);
@@ -19,14 +18,12 @@ public class EveryMorningTest extends BaseDayTest{
             Assert.assertEquals(91, silo.getObject("EarCorn"));
             for (Horse h : stable2) {
                 froilanda.mount(h);
-                h.move();
                 froilanda.dismount(h);
                 h.eat(3, "EarCorn");
             }
             Assert.assertEquals(82, silo.getObject("EarCorn"));
             for (Horse h : stable3) {
                 froilan.mount(h);
-                h.move();
                 froilan.dismount(h);
                 h.eat(3, "EarCorn");
             }
