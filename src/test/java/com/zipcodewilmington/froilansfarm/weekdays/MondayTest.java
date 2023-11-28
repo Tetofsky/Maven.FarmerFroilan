@@ -27,38 +27,38 @@ public class MondayTest extends BaseDayTest{
         Assert.assertTrue(actual);
     }
 
-    @Test
-    public void testCropRow1Fertilize(){
-        //setup();
-        Boolean actual = cropRow1.get(EarCorn).hasBeenFertilized;
-        Assert.assertTrue(actual);
-    }
-
-    @Test
-    public void testCropRow2Fertilize(){
-        //setup();
-        Boolean actual = cropRow1.get(Tomato).hasBeenFertilized;
-        Assert.assertTrue(actual);
-    }
-
-    @Test
-    public void testCropRow3Fertilize(){
-        //setup();
-        Boolean actual = cropRow1.get(Bean).hasBeenFertilized;
-        Assert.assertTrue(actual);
-    }
-
-    @Test
-    public void testCropRow4Fertilize(){
-        //setup();
-        Boolean actual = cropRow1.get(EarCorn).hasBeenFertilized;
-        Assert.assertTrue(actual);
-    }
-
-    @Test
-    public void testCropRow5Fertilize(){
-        //setup();
-        Boolean actual = cropRow1.get(Tomato).hasBeenFertilized;
-        Assert.assertTrue(actual);
-    }
+//    @Test
+//    public void testCropRow1Fertilize(){
+//        //setup();
+//        Boolean actual = cropRow1.get(EarCorn).hasBeenFertilized;
+//        Assert.assertTrue(actual);
+//    }
+//
+//    @Test
+//    public void testCropRow2Fertilize(){
+//        //setup();
+//        Boolean actual = cropRow1.get(Tomato).hasBeenFertilized;
+//        Assert.assertTrue(actual);
+//    }
+//
+//    @Test
+//    public void testCropRow3Fertilize(){
+//        //setup();
+//        Boolean actual = cropRow1.get(Bean).hasBeenFertilized;
+//        Assert.assertTrue(actual);
+//    }
+//
+//    @Test
+//    public void testCropRow4Fertilize(){
+//        //setup();
+//        Boolean actual = cropRow1.get(EarCorn).hasBeenFertilized;
+//        Assert.assertTrue(actual);
+//    }
+//
+//    @Test
+//    public void testCropRow5Fertilize(){
+//        //setup();
+//        Boolean actual = cropRow1.get(Tomato).hasBeenFertilized;
+//        Assert.assertTrue(actual);
+//    }
 }

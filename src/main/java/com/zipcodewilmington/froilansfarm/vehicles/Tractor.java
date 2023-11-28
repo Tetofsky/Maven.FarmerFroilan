@@ -17,11 +17,6 @@ public class Tractor extends Vehicle implements FarmVehicle {
     }
 
     @Override
-    public Boolean move() {
-        return true;
-    }
-
-    @Override
     public Boolean operate() {
         return true;
     }

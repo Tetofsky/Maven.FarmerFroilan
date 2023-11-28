@@ -18,12 +18,6 @@ public class CropDuster <RiderType extends Pilot> extends Vehicle implements Air
     }
 
     @Override
-    public Boolean move() {
-        return true;
-    }
-
-
-    @Override
     public Boolean fly(Field<CropRow<Crop>> field) {
         return true;
     }

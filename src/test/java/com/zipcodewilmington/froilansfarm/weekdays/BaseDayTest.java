@@ -20,7 +20,7 @@ public class BaseDayTest {
 
     @Before
     public void setup(){
-        froilan = new Farmer<>("Froilan");
+        froilan = new Farmer("Froilan");
         froilanda = new Pilot("Froilanda");
         field = new Field<>();
         cropRow1 = new CropRow<>();
